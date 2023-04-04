@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&family=Sacramento&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "header header"
+                        "one two"
+                        "three four"
+                        "five six"
+                        "seven eight"
+                        "footer footer";
+    gap: 10px;    
+}
+
+/*header*/
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+header {
+    background-color: black;
+    color: #fff;
+}
+
+header nav ul li{
+    padding: 1em;
+    border-radius: 5px;
+}
+header nav ul li:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.6s;
+}
+/*top-container*/
+.top-container{
+    background-image: url(./images/top-image.jpeg);
+    padding: 5em;
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    grid-area: header;
+}
+.top-container h1{
+    font-size: 3rem;
+    margin-bottom: 3em;
+}
+.top-container p{
+    font-size: 1.4rem;
+    color:aqua;
+    font-weight: bold;
+}
+/*middle container*/
+#one{
+    grid-area: one;
+    background-color: #7149C6;
+}
+#two{
+    grid-area: two;
+    background-color: #159895;
+} 
+#three{
+    grid-area: three;
+    background-color: #EA5455;
+}
+#four{
+    grid-area: four;
+    background-color: #F0EB8D;
+}
+#five{
+    grid-area: five;
+    background-color: #2C3333;
+}
+#six{
+    grid-area: six;
+    background-color: #5D9C59;
+}
+#seven{
+    grid-area: seven;
+    background-color: #d038d3;
+}
+#eight{
+    grid-area: eight;
+    background-color: rgb(143, 205, 18);
+}
+
+.sep-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(199, 197, 197);
+    color: white;
+    padding-top: 0.4em;
+}
+.sep-div p {
+    font-size: 1.2rem;
+}
+
+.creative {
+    display: grid;
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    height: 85%;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: black;
+}
+
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: black;
+    color: white;
+    padding: 50px 100px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+footer{
+    grid-area: footer;
+}
+.box{
+    display: flex;    
+   
+}
+.box-item{
+    padding: 0px 30px;
+    
+}
+.icons{
+    height: 42px;
+    width: 42px;
+}
+.side-box{
+    display: flex;
+    padding: 10px;
+}
+h1,
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Varela Round', sans-serif;
+}
